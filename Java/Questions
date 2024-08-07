@@ -22,3 +22,8 @@
 10. What are interfaces and  Abstract class in Java ? Explain which one should we use.
 11. Explain ArrayList vs LinkedList, Internal working of ArrayList.
 12. Dependency Inversion vs Inversion of Control.
+13. Overloading static methods with instance methods.
+    - Can static method overloaded with another static method ?
+    - Can static method overloaded with another instance method ?
+    - Can static method be overrided ?
+    - Can static method be hided by instance method of child class ?
