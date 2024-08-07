@@ -14,3 +14,11 @@
 3. What happens when we add a duplicate key in HashMap ?
 4. Is HashMap Thead Safe ?
 5. Explain concurrent HashMap working ?
+6. Explain what is synchronized Map how it is different than Concurrent HashMap.
+6. Explain Checked vs Unchecked Exception.
+7. Explain relationship of exception in case of inheritance.
+8. Explain Immutable class in Java, How to create a Immutable class ?
+9. How to create custom exception ?
+10. What are interfaces and  Abstract class in Java ? Explain which one should we use.
+11. Explain ArrayList vs LinkedList, Internal working of ArrayList.
+12. Dependency Inversion vs Inversion of Control.
