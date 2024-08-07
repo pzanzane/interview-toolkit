@@ -1,1 +1,5 @@
-
+1. HashSet Working.
+2. What is Maps ? Explain type of Maps.
+3. What happens when we add a duplicate key in HashMap ?
+4. Is HashMap Thead Safe ?
+5. Explain concurrent HashMap working ?
