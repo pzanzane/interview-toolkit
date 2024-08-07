@@ -1,4 +1,9 @@
 1. HashSet Working.
+  1.1 Beginner Question.
+  - Explain what a HashSet is in Java. How does it differ from other collections such as ArrayList and LinkedList ? Write small snippet to use HashSet.
+  1.2 Expert Question
+  - Discuss the internal working of a HashSet in Java. How does it ensure that duplicate elements are not added ? What happens when the load factor exceeds a certain threshold ?
+
 2. What is Maps ? Explain type of Maps.
 3. What happens when we add a duplicate key in HashMap ?
 4. Is HashMap Thead Safe ?
