@@ -17,6 +17,8 @@
 6. Explain what is synchronized Map how it is different than Concurrent HashMap.
 6. Explain Checked vs Unchecked Exception.
 7. Explain exception handling in case of method overriding.
+  7.1 Parent method does not declare exception with throws.
+  7.2 Parent method declares exception with throws.
 8. Explain Immutable class in Java, How to create a Immutable class ?
 9. How to create custom exception ?
 10. What are interfaces and  Abstract class in Java ? Explain which one should we use.
@@ -27,3 +29,40 @@
     - Can static method overloaded with another instance method ?
     - Can static method be overrided ?
     - Can static method be hided by instance method of child class ?
+14. Java 8 Interface features.
+15. What is a predicate in Java 8
+16. Explain ArrayList, internal working of ArrayList.
+17. Explain Linkedlist.
+18. Explain AccessModifiers in Java.
+19. Hashmap of String and Employee object.Write a java 8 method to filter the hashmap and return list of Employee where salary is gteaer than 1K
+20. Write the above Program without Java 8 method
+21. Different ways to iterate over a map? Java 8 method to iterate over a map
+22. What is lambda expressions? what is Functional Interface
+23. Why we can't have two methods in functional interface?
+24. Write a lambda expression to add two numbers using a functional interface
+25. Option in Java 8? write a Program for to show use of Option
+    "Employee e = new Employee(""abc"");
+    Emloyee e1= new Employee (""abc);
+  what will be the length of the set when e and e1 are added"
+26. Write a Program to convert the Employee class so that e and e1 objects are equal
+27. What is immutable classes? Immutable classes in Java 
+28. "Patient class with == PatientId, PatientName and Address(But address is from a Different class)
+    Write a program to make patient class follow the principle of Immutability"
+29. Counting String objects created by Java code.
+30. Why String Classes are Immutable.
+    String, StringBuffer, StringBuilder.
+31. Streams vs Collections
+32. Functional Interfaces
+33. Can we add Default method in Functional Interface
+34. Abstraction vs Encapsulation
+35. How to create Thread
+36. Thread Life Cycle for wait and sleep
+37. How to switch Thread to wait and Sleep
+38. Write a program to filter a list of Strings whose length is greater than 5 and print it using Java 8 and Use Method reference to write System.out.println
+39. Method Reference
+40. Write a program to find the occurence of  all numbers in an Array 
+    Example - [10,9,10,9,8,11,11,8]
+41. Can we have method with same signature and return type in a class and Explain what is method signature
+42. Fail fast Interator vs Fail safe Iterator
+43. Functional Interfaces and their Use
+    List all Predefined-Functional Interfaces
