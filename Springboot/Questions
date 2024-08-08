@@ -1,1 +1,51 @@
-
+1. Reactive Spring Framework, Webflux
+1. @SpringApplication Annotation
+2. @ComponentScan Annotation Working
+3. Actuator and defualt end points of actutators
+4. Active profiling
+5. Spring MVC flow
+6. What are some of the starter dependencies/ Basic dependenices used in spring boot.
+7. defaut scope of bean in spring
+8. Bean factory Vs Application context
+9. AutoConfiguration in Spring Boot
+10. Benefit of JPARepository Interface
+11. Create a custom JPARepository
+12. Can we add a Spring boot project dependency in a core java project 
+13. What is Spring boot? benefits
+15. Yaml Configurations
+16. Use of dev tools dependency
+17. Can we create a custom actutator endpoint 
+18. Synchronous vs Asynchronous rest calls
+19. How to make Asynchronous Rest Calls
+20. Put vs Post mapping
+21. Is there a difference in put and post parameters
+22. DI vs IOC
+23. default bean scope in spring boot
+24. other bean scopes
+25. prototype vs request bean scope
+26. Request Param Vs Path variable
+27. Can we combine Path variable and Request Param in a single rest call
+28. How to accept XML as a parameter. Dependency name
+29. How to send JSON as a response
+30. LifeCycle method in Spring Bean
+32. @EnableAutoConfiguration
+33. Use of @Qualifier
+34. difference between @Qualifier and @Primary
+35. @Scope
+36. Singleton vs prototype
+37. How to configure applicationContext?
+38. Benefits of Spring Boot? Which version of Spring boot
+39. Configurations file in Spring -- dispatchher servlet, web.xml, servlet.xml etc
+40. # and $ significance @Value annotation
+41. StereoType Annotations
+42. Spring Boot vs Spring 
+43. Benefit of Spring Data JPA
+44. Version of Spring Boot Used
+45. Different RequestMapping Annotations
+46. RestController vs Controller
+47. How to send .xls or txt file as response
+48. Internal Server Error and Exception Handling in SpringBoot
+50. How to Skip/disable @EnableAutoConfiguration for a class
+51. Schedulers in Spring
+52. Different ways to create Beans in Spring
+53. Different ways to access properties in Spring
