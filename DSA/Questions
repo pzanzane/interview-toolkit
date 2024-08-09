@@ -1,1 +1,32 @@
+Core DataStructures.
 
+- Time Complexity
+  - O(1), O(logN), O(N), O(NLogN), O(N^2), O(2^N), O(N!)
+- Array
+- LinkedList
+- Stack
+- Queue
+- Binary Tree
+- HashTables
+- Heaps
+- Graphs
+
+Advance DataStructure
+- Tries
+- Unione Finds
+
+Algorithms for Each DSA
+https://instabyte.io/p/dsa-master
+https://instabyte.io/p/interview-master-100
+
+- Array
+  - Sorting
+  - Searching
+  - Two Pointer
+  - Sliding Window
+
+- Linked List
+  - Traversal
+  - Insertion/Deletion
+  - Reversal
+  - Cycle Detection
