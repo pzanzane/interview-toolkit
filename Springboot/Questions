@@ -49,3 +49,13 @@
 51. Schedulers in Spring
 52. Different ways to create Beans in Spring
 53. Different ways to access properties in Spring
+
+
+------------------------------------------
+# Project Derived Interview Questions
+
+1. What is Interface Driven Rest Controller ?
+2. Why we should use Lombok library ?
+3. How will you validate Request Body and Query. Path Parameters ?
+4. How do you handle the exceptions in Rest API ?
+5. What is Data Transfer Objects (DTO) ?
