@@ -1,1 +1,7 @@
-
+1. Internal communication between microservices
+2. Two phase commit.
+3. Three phase commit.
+4. CQRS pattern in microservices.
+5. SAGA pattern in microservices.
+6. Orchestration in microservices.
+7. Fallback mechanism in microservices.
