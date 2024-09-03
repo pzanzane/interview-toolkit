@@ -1,1 +1,4 @@
-
+1. Apache Kafka messaging Queue.
+2. Rate Limiter.
+3. API Gateway.
+4. Circuit Breaker.
