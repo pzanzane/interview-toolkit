@@ -68,6 +68,8 @@
 
 
 * What is a functional interface? Benefits of it?
+-- https://www.geeksforgeeks.org/functional-interfaces-java/
+
 * @qulifier vs @primary
 * Factory vs Abstract Factory vs Builder pattern
 * security in your project. How to check valid client.
