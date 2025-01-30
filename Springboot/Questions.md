@@ -58,8 +58,9 @@
 2. Why we should use Lombok library ?
 3. How will you validate Request Body and Query. Path Parameters ?
 4. How do you handle the exceptions in Rest API ?
-5. What is Data Transfer Objects (DTO) ?
-6. What is a Custom Validator, explain with example, Usually this is a business requirement eg. AccountURI.
+   @ControllerAdvice, @ExceptionHandler, exception parameter, return ErrorObject, @ResponseBody, @ResponseStatus.
+6. What is Data Transfer Objects (DTO) ?
+7. What is a Custom Validator, explain with example, Usually this is a business requirement eg. AccountURI.
 
 
 
