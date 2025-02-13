@@ -1,0 +1,35 @@
+1.OOPS concept with one example, Diamond problem of interface in java
+2. Static and main method, constructor, cunstructor overloading, String, StringBuffer and StringBuilder,  
+See geek for geeks for below concepts:
+
+	a. Arrays in Java(see geek for geeks), 
+	b. Keywords in java(see geek for geeks), 
+	c. Access Modifiers in java
+	d. Memory allocation in java
+2. Collections
+3. Design patterns
+4. SOLID principles
+5. Exception handling
+6. Synchronization in java(multithreading concept)
+7. File Handling in java
+8. JDBC connectivity
+
+9. Java 8 features with examples/programs, java 9, 11, 17, 22
+
+
+10. Spring - (See geek for geeks) Basics of Spring framework, Software setup and configuration, Core spring/spring modules(Bean life cycle, dependency injection/IOC/IOC container, Bean Factory, Application Context), Spring data, Spring AOP, Spring Security(Authentication, Authorization, JWT token, Oauth2)
+Spring annotations, Spring Hibernate, Spring data jpa
+
+11. SpringMVC - (See geek for geeks) MVC framework architecture, Dispatcher Servlet, Model, View, Spring MVC annotations
+
+12. SpringBoot - Springboot introduction, Spring boot annotation, architecture, starters, Actuators,  Springboot Restful webservices, 
+		Diff between spring, springMVC, SpringBoot?
+
+13. REST API methods- PUT,POST, Update, Patch, Delete
+
+14. Microservices
+15. AWS Cloud (Lambda, API Gateway, S3 bucket, Rekognition, AWSCodecommit)
+
+
+Difference between application and web server? what are its types?
+HTTP status codes, what is the default http port number?
