@@ -1,0 +1,370 @@
+Logic Monitor Interview Questions
+
+1. REST APIs specificationn - answered correctly,
+2. Questions related to REST API methods - answered correctly
+3. PathParams & QueryParams - given moderate answer
+4. Hibernate JPA(@Entity, @OneToMany) - answered correctly
+5. Jackson data bind to deserialized - given moderate answer
+6. Generics in Java - given moderate answer
+7. Define Arraylist and what is the initial size of ArrayList? - Correctly answered
+8. Multithreading - Lets say we have a 100 pages book and 5 threads. We need to search for an apple word in the entire book. How will you do this? - provided the solution that it should apply divide and combine rule
+9. Write a code to reverse words in the sentence without using split function? - was writing code with Character.isWhitespace iterating through the sentence string, howevever in between interviewer said i got it we can stop here as time is up for the interview.
+
+Overall the interview was good.
+
+MasterCard Interview Questions
+
+1. Asked about my project. Questions related to it.
+2. Consider you are having User class and it contains usernName, age, salary fields. Write a code such that your list should contain users 
+that starts with "R", having age between 25 to 45 and second highest salary.
+
+list.stream().filter(s -> s.getName().startSWith(R))).filter(e -> e.getAge()>25 && e.getAge()<45).limit(2).collect(Collestors.toList).
+3. Consider below program:
+class Thread1 {
+Thread1 t1;
+Thread2 t2;
+
+public void run() {
+	t2.sleep(100); // which thread will be in sleep?
+}
+
+}
+class Thread2 {
+
+Thread1 t1;
+Thread2 t2;
+
+public void run() {
+	t1.sleep(100); // which thread will be in sleep?
+}
+}
+4. What is code coverage that you are following while unit testing?
+
+
+Perforce Interview Questions: 1st Round -
+1. SOLID principles
+2. OOPS concepts
+3. What will be the ouptut of below codes -
+
+	a. public class Test{
+
+	public void test(Object s){
+	        System.out.println("Method 1 ");
+
+	}
+
+	public int test(Object s){
+               System.out.println("Method 2 ");
+	       return 1;
+	}
+
+	public static void main(String[] args){
+		new Test().test(null);
+	}
+    }
+
+
+b. public class Test{
+	public void test(Object s){
+		System.out.println("Method 1 ");
+	}
+
+	public void test(String s){
+     		System.out.println("Method 2 ");
+	}
+
+	public static void main(String[] args){
+		new Test().test(null);
+	}
+   }
+
+c. class A{
+	public void test(String s){
+		System.out.println("classAtest(Objects)");
+	}
+   }
+
+   class B extends A {
+	public void test(String s){
+		System.out.println("classBtest(Strings)");
+	}
+
+	public void test1(String s){
+		System.out.println("classBtest1(Strings)");
+	}
+    }
+ 
+    class C extends A{
+	public void test(String s){
+		System.out.println("classCtest(Strings)");
+	}
+    }
+
+    class Test {
+	public static void main(Strings[] args) { 
+		B b = new A();
+		a.test1("");
+	}
+    }
+  4. What will be the usgae of following access modifier variables 
+
+a.b.c.Class Test {
+
+private String x1;
+
+protected String x2;
+
+public String x3;
+
+String x4;
+
+}
+
+a.b.c SubclassTest
+
+5. Write a Singleton class
+6. Write a code using java 8, to find and group the anagram words from a given string array {"dog", "cat", "listen", "silent", "pet"}
+7. What is shallow copy and deep copy?
+
+Perforce 2nd Round -
+
+1. Implement browser's forward and backward button.
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+    private Stack<String> backHistory = new Stack<>();
+    private Stack<String> forward = new Stack<>();
+    private String currentUrl;
+        public HelloWorld() {
+        currentUrl = "https://www.google.com"; //Initial Url
+        backHistory.push(currentUrl);
+    }
+    
+    public String getCurrentUrl() {
+        return currentUrl;
+    }
+    
+    public void visitUrl(String url) {
+        if(!url.equals(currentUrl)) {
+            backHistory.push(url);
+            currentUrl = url;
+            forward.clear();
+        }
+    }
+    
+    private String goBack() {
+            if(!backHistory.isEmpty()) {
+                forward.push(currentUrl);
+                backHistory.pop();
+                currentUrl = backHistory.isEmpty() ? "" : backHistory.peek();
+            }
+            return currentUrl;
+     } 
+     
+     private String goForward(){
+         if(forward.size()>1) {
+                backHistory.push(forward.pop());
+                currentUrl = backHistory.peek();
+            } else if(!forward.isEmpty()) {
+                backHistory.push(forward.pop());
+                currentUrl = backHistory.peek();
+                forward.clear();
+            }
+        return currentUrl;
+     }
+     
+         public static void main(String[] args) {
+        HelloWorld obj = new HelloWorld();
+        System.out.println("Current Url:" + obj.getCurrentUrl());
+        obj.visitUrl("https://www.amazon.in");
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+    
+    System.out.println("Back:" + obj.goBack());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+    
+      System.out.println("Forward:" + obj.goForward());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+    
+       System.out.println("Back:" + obj.goBack());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+    
+        obj.visitUrl("https://www.flipkart.com");
+        System.out.println("Current Url:" + obj.getCurrentUrl());
+        
+              System.out.println("Back:" + obj.goBack());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+    
+          System.out.println("Forward:" + obj.goForward());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+     System.out.println("Forward:" + obj.goForward());
+    System.out.println("Current Url:" + obj.getCurrentUrl());
+         
+    }
+    
+}
+
+2. Sort array elements having digits from 0-9. Some are duplicates. Dont use any sorting in built function 
+  
+3. How will you store or what will be the DB schema for storing 2d or 3s metrics -
+
+
+Metric table
+
+metric_id,
+name,
+
+
+row_id
+col_id
+digit_1
+digit_2
+digit_3
+
+
+1, 2, 3
+4, 5, 6
+
+1, 2
+3, 4
+5, 6
+
+
+
+2dMatrix table
+row_index col_index value 
+	0	0	1
+	0	1	2
+
+
+LTIMindtree 
+
+1. Explain about your project.
+2. Core java 8 features - Lambda expression, Stream APIs,
+3. SOLID principles
+4. Write a singleton class that you have used in your project 
+	public class Item {
+	private static Item item;
+
+	private Item() {}
+
+	public static Item getInstance() {
+		if(item == null) {
+			item = new Item();
+		}
+	return item;
+	}
+       }
+5. Write a code to sort element of an array withour using built in function?
+6. What is Microservice architecture and design patterens in it? Explain any one design pattern that you have used in your project?
+7. Write a JPA hibernate code which will have different annotations and having OnetoMany relationship. Lets say you are having Employee and Department?
+
+
+arr = {64, 34, 25, 12, 22, 11, 90}
+
+int n = arr.length;
+for(int i = 0; i < n-1; i++) {
+	for(int j = 0; j< n-i-1; j++) {
+		if(arr[j] > arr[j+1]) {
+			int temp = arr[j];
+			arr[j] = arr[j+1];
+			arr[j+1] = temp;
+		}
+
+	}
+}
+
+@Entity
+public class Department {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	String departName;
+
+	@OneToMany(mappedBy = "department")
+	List<Employee> emps;
+
+	int empCount;
+	
+}
+
+@Entity
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	String empName;
+	
+	private Department department;
+	
+
+}
+
+departments.stream().sorted(Comparator.comparingInt(Department::getEmployeeCount).reversed()).skip(1).findFirst();
+
+
+Convert list into map having key is departName and vvalue = List<Employees>
+
+List<Employees> emps = new ArrayList<>();
+emps.add(new Employee("Pramod", 01));
+emps.add(new Employee("Rohan", 02));
+
+
+Map<String, List<Employee>> = departments.stream().collect(Collectors.groupingBy(Employee::getName)).toList();
+
+
+Nice 1st Round
+1. Tell me about your project that you are currently working on
+2. Why java is independent? How JVM works? 
+3. What are class loaders types? Does it follow any sort of execution process? 
+   If you dont find any class loaders then what type of exception occurs? ("ClassNotFoundException")
+4. Difference between class definition and class not found error?
+5. You're working with a e-commerce site, you need to design low level. Design a method that will accept parameter product object(id and prod_price)
+   and there would be a string parameter to select a payment preference(ex: cash delivery, net banking, etc.,). So how we will design it in java.
+   Also think about whether the solution will be feasible becauase in future there will be more payment preference.
+6. How return statement behaves in try catch finally blocks? and what will happen if there is a exception in try block followed by return statement?
+7. In Spring boot annotations, what will happen if we annotate interface as @Service instead of its implementation class?
+8. In JPA entities, what will happen when we mark entity class as final?
+9. Is it possible to use Stack as Queue? if it is yes then explain working of it?
+10. How Arraylist dynamically exapnded? What will happen if there is overhead for thousands of records in ArrayList?
+ 
+
+Nice 2nd Round
+
+1. Create an Employee class
+ with fields name as name, id, dept_name and salary
+
+2. Read the employee records and create a list of 'Employee' objects.
+
+3. Use 'Comparator' and lambda expressions to sort list on based salary
+
+
+List<Employee> employees = new ArrayList<>();
+
+List<Employee> uniqueEmployees = employees.stream().distinct().collect(Collectors.toList());
+List<Employee> results = uniqueEmployees.sort(Comparator.comparingDouble(Employee::getSalary));
+
+uniqueEmployees.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).collect(Collectors.toList());
+
+
+4. How we can override equals method
+class Employee {
+
+@Override
+public boolean equals(Object obj) {
+	if(this == obj) {
+		return true;
+	}
+	if(!(obj instanceof Employee)) {
+		return false;
+	}
+Employee other = (Employee)obj;
+return id == other.id && Objects.equals(name, other.name);
+
+}
+}
+
