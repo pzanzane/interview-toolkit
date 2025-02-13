@@ -1,1 +1,67 @@
+1. Why string is immutable?
+2. How to create immutable object?
+3. "As we know, Array is mutable but String is not.  So what happens when we change a string object in array?"
+4. Why passwords should not be stored/passed in String? 
+5. "Is Java pass-by-reference or pass-by-value?
+6. What will happen if we pass array as arguments to the method and performs changes on it?"
+7. What is IS-A and HAS-A relationship and when these can be used?
+8. What is composition and aggregation?
+9. Can private/static/final be overloaded and overriden- WHY?
+10. What is StringBuilder ? How does it optimize the performance?
+11. "What is the issue with the below program and its time complexity? How would you optimize the performance?
+    String str = "";
+    for(int i=0; i< 26; i++){
+         char c = (char) ('a'+i);
+         str = str + c;
+    }
+    System.out.println(str);"
 
+12.What will be output of (b1==b2 && b1.equals(b2))?"
+  "Boolean b1 = new Boolean(null);//false;
+  Boolean b2 = new Boolean(false);//false;
+
+13. What is Serialization and Externalization? How to prevent some value to be serialized?
+14. What will happen if all the classes have same SERIAL VERSION UID?
+15. How would you create a scheduler in Java?
+16. What is thread and how to create? 
+17. What is difference between start() and run() method of thread?
+18. "Can start() method of thread be overriden? 
+19. What will happen if it is overriden?"
+20. What will happen if we don't override run() method?
+21. What is ThreadLocal?
+22. How many static defaut and abstract methods is allowed in Functional Interface?
+23. Why interfaces are bad design principle?
+24. Difference between Java 8 default methods in interface and Abstract class methods?
+25. What is Functional Interface? 
+26. What is lambda expression?
+27. What is STREAMS API?
+28. What are terminal and intermediate operations ?
+29. Are intermediate operations lazy or eager?
+30. Can streams object be reused multiple times? 
+31. When streams objects are consumed/closed?
+32. What is your favourite collections?
+33. What type of object we can add in TreeSet?
+34. "Can we add two different values with same key? 
+  Like -> map.put(new Integer(10), “A”) and im.put(new Integer(10), “B”) ? OR
+  What will happen if we add values with same key?"
+35. How to remove duplicate elements with and without collections from an array?
+36. How does HashMap work? How does hashing works?
+37. "Can a same bucket contain other object in HashMap? 
+    If yes, how does it identify the correct object to get?"
+38. What is ListIterator?
+39. What is singleton and how to create? 
+40. How to create lazy and thread sfae singleton object?
+41. Can you name a Singleton object in Java?
+42. What is Class Level lock and use cases?
+43. Why wait and notify methods are in Object class rather than in Thread?
+44. Is Java synchronous/asynchronous?
+45. How to write asynchronous programming in Java?
+46. What is Happens-Before? What is role of volatile keyword?
+47. What is billion dollars mistake in Java?
+48. Can java program run only with JRE?
+49. Can java program be compiled through JRE?
+50. What are types of Class loaders?
+51. Which memory areas among Method, HEAP, Stack, PC register, Natve Method stacks are thread safe?
+52. Where constant pools and Static, Instance and Local variables are stored?
+53. Where primitive values are stored?
+54. What is the difference between the JVM and the JRE?
