@@ -65,3 +65,8 @@
 52. Where constant pools and Static, Instance and Local variables are stored?
 53. Where primitive values are stored?
 54. What is the difference between the JVM and the JRE?
+55. Excpetion for method overriding.
+    Rule1. Parent no exception, child exception (checked compile time error, unchecked allowed).
+    Rule2. Parent exception, child not exception (allowed)
+    Rule3. Parent super exception child subexception (allowed)
+    Rule4. Parent subsceiption child super exception (not allowed)
