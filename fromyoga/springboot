@@ -1,50 +1,51 @@
-1. What is Spring Framework and explain key features?
-2. What is difference between Spring MVC and Spring Boot?
-3. What is Bean Life Cycle?
-4. What is difference between ApplicationContext and BeanFactory?
-5. What is default scope of beans?
-6. How to change bean scopes?
-7. What are design patterns used in Spring? Cite examples.
-8. What is IOC and Depencney Injection?
-9. How to inject beans?
-10. Which one is preferred among Constructor and Setter based DI?
-11. How to inject all the similar beans?
-12. Can similar beans be injected as Map? What will be key of the map?
-13. Why autowiring can't be used to inject primitive and string values?
-14. Though String is object but still it can't be autowired- why?
-15. What is the purpose of the application.properties (or application.yml) file?
-16. What is difference between @Service, @Component, @Repository?
-17. How would you customize a bean say -RestTemplate?
-18. What is a Configuration?
-19. Can we apply @Autowired, @Inject, @Value, and @Resource in our own custom BeanPostProcessor or BeanFactoryPostProcessor?
-20. "What is @postConstruct and @preDestroy?
-21. Explain @SpringBootApplication
-22. What is differece between @RestController vs @Controller?
-23. How to create PDF/EXCEL/TextFIle as response from controller method?
-24. How to disable webserver in spring?
-25. What is default server in Spring Boot?
-26. How to change default embedded server?
-27. How to exclude class from SpringBoot?
-28. Can you create controller without use of @Controller and @RestController? 
-29. What is REST API?
-30. Describe the process of creating a RESTful API using Spring Boot."
-31. How can you handle large file uploads in a Spring Boot application?
-32. What is a repository and Why are we using repositories?
-33. How would you create your own DispatcherServlet?
-34. "Name some framwork events that are fired and how would you listen those  events?"
-35. How would you create async event?
-36. How would you re-try a failed transaction in a method?
-37. How to achieve same session across multiple web servers?
-38. What is difference between Monolithic Application and Microservice?
-39. How can you implement distributed session management in a Spring Boot application using Spring Session?
-40. How can you implement microservices architecture using Spring Boot?
-41. "What is the difference between reactive and servlet Spring?
-42. What is the purpose of the @Scheduled annotation in Spring Boot?
-43. Describe the role of the @Profile annotation in Spring Boot.
-44. How can you implement exception handling in a Spring Boot application?
-45. What are the different deployment options for a Spring Boot application?
-46. What is Spring Boot Actuator?
-47. What is maven dependencies and their scopes?
-48. How can you implement method-level security in a Spring Boot application?
-49. What is Filter and Interceptor and differences?
-50. What is CORS and CSRF?
+- Explain Spring Security Features.
+- What is Spring Framework and explain key features?
+- What is difference between Spring MVC and Spring Boot?
+- What is Bean Life Cycle?
+- What is difference between ApplicationContext and BeanFactory?
+- What is default scope of beans?
+- How to change bean scopes?
+- What are design patterns used in Spring? Cite examples.
+- What is IOC and Dependency Injection?
+- How to inject beans?
+- Which one is preferred among Constructor and Setter based DI?
+- How to inject all the similar beans?
+- Can similar beans be injected as Map? What will be key of the map?
+- Why autowiring can't be used to inject primitive and string values?
+- Though String is object but still it can't be autowired—why?
+- What is the purpose of the application.properties (or application.yml) file?
+- What is difference between @Service, @Component, @Repository?
+- How would you customize a bean say - RestTemplate?
+- What is a Configuration?
+- Can we apply @Autowired, @Inject, @Value, and @Resource in our own custom BeanPostProcessor or BeanFactoryPostProcessor?
+- What is @PostConstruct and @PreDestroy?
+- Explain @SpringBootApplication
+- What is difference between @RestController vs @Controller?
+- How to create PDF/EXCEL/TextFile as response from controller method?
+- How to disable webserver in spring?
+- What is default server in Spring Boot?
+- How to change default embedded server?
+- How to exclude class from SpringBoot?
+- Can you create controller without use of @Controller and @RestController?
+- What is REST API?
+- Describe the process of creating a RESTful API using Spring Boot.
+- How can you handle large file uploads in a Spring Boot application?
+- What is a repository and why are we using repositories?
+- How would you create your own DispatcherServlet?
+- Name some framework events that are fired and how would you listen to those events?
+- How would you create async event?
+- How would you retry a failed transaction in a method?
+- How to achieve same session across multiple web servers?
+- What is difference between Monolithic Application and Microservice?
+- How can you implement distributed session management in a Spring Boot application using Spring Session?
+- How can you implement microservices architecture using Spring Boot?
+- What is the difference between reactive and servlet Spring?
+- What is the purpose of the @Scheduled annotation in Spring Boot?
+- Describe the role of the @Profile annotation in Spring Boot.
+- How can you implement exception handling in a Spring Boot application?
+- What are the different deployment options for a Spring Boot application?
+- What is Spring Boot Actuator?
+- What is Maven dependencies and their scopes?
+- How can you implement method-level security in a Spring Boot application?
+- What is Filter and Interceptor and differences?
+- What is CORS and CSRF?
