@@ -4,4 +4,10 @@
 - Now use Predicates for above both conditions and club them.
 - Which features you have used from Java8, Java17 and Java21, please descibe them.
 - S.O.L.I.D. principles.
+- What is Immutable Object, what is significance of it, how to create Immutable Class ?
+- Make class Immutable if it has List<CutomObject>.
+- - In this case either CustomObject need to be immutable and we have to return ImmutableList, for that we can use Collections.unmodifiableList(list) or ImmutableList class of Google.
+  - If we try to change the unmodifiableList then it throws UnSupportedOperationException.
+- What features are available to intercept request before going to the controller ?
+- - Filter[implements Filter and doFilter(ServeletRequest, ServeletResponse, FilterChain), HttpServletRequestWrapper] and Aspect Oriented Programming (AOP) [RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
 - 
