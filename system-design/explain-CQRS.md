@@ -7,9 +7,9 @@
 - Here Commands and Queries are generic components of the system.
 - This patterns allows flexibility and scalability.
 
-  ### Key Components of CQRS
-  - Command Service
-  - Query Service
-  - Event Bus / Message Broker
-  - Data Store
-  - API Gateway
+### Key Components of CQRS
+- Command Service
+- Query Service
+- Event Bus / Message Broker
+- Data Store
+- API Gateway
