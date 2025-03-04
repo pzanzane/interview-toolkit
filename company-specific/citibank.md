@@ -10,4 +10,10 @@
   - If we try to change the unmodifiableList then it throws UnSupportedOperationException.
 - What features are available to intercept request before going to the controller ?
 - - Filter[implements Filter and doFilter(ServeletRequest, ServeletResponse, FilterChain), HttpServletRequestWrapper] and Aspect Oriented Programming (AOP) [RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
-- 
+- How to check Header validation in Inteceptors ?
+- What is the difference between hybernate and jpa ?
+- List 10 annotations from JPA.
+- Qualifier annotation and Primary annotation.
+- Design Patterns in Microservices. [CQRS, SAGA< Pipeline]
+- Circuit Breaker, any libraries used for this (resilience4j)
+- How configs are secured. eg, DB password, credentials, certificates [Vault and OpenShift].
