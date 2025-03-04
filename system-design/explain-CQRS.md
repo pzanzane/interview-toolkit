@@ -13,3 +13,15 @@
 - Event Bus / Message Broker
 - Data Store
 - API Gateway
+
+### Principles of CQRS
+- Service boundaries.
+- Separate concerns.
+- Independent scaling.
+- Event driven architecture.
+
+### Advantages
+- Seperation of concerns
+- Modularity
+- Independent scaling
+- Reduced blocking operation leads to improved performance.
