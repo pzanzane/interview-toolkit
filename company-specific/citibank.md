@@ -13,6 +13,7 @@
   - Filter[implements OncePerRequestFilter or HTTPFilter and doFilter(ServeletRequest, ServeletResponse, FilterChain), returns HttpServletRequestWrapper].
   - Aspect Oriented Programming (AOP) [@RestControllerAdvice, RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
   - HandlerInterceptor can access but cannot modify the request.
+  - - HandlerInterceptor can read the request but does not return new RequestWrapper, so readin same request again may lead to EmptyBody in crontroller.
   - Filter can alter Request object, Interceptor can used for detailed authorization and caching. Common tasks such as Authentication, Logging can be done in both.
 
 - How to check Header validation in Inteceptors ?
