@@ -31,7 +31,7 @@
   - @ManyToOne – Defines a many-to-one relationship (foreign key mapping).
   - @OneToMany – Defines a one-to-many relationship.
   - @OneToOne – Defines a one-to-one relationship.
-  - @Transient – Excludes a field from persistence (not stored in the database).
+  - @Transient – Excludes a field from persistence (not stored in the database). [Alternative to this annotation is static or final variable]
   - @Enumerated – Maps an enum to a database column (as ORDINAL or STRING).
   - @MappedSuperclass – Defines a superclass that provides common fields to child entities without becoming a database table itself.
 
