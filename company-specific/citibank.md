@@ -9,7 +9,9 @@
 - - In this case either CustomObject need to be immutable and we have to return ImmutableList, for that we can use Collections.unmodifiableList(list) or ImmutableList class of Google.
   - If we try to change the unmodifiableList then it throws UnSupportedOperationException.
 - What features are available to intercept request before going to the controller ?
-- - Filter[implements Filter and doFilter(ServeletRequest, ServeletResponse, FilterChain), HttpServletRequestWrapper] and Aspect Oriented Programming (AOP) [RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
+- - Filter[implements Filter and doFilter(ServeletRequest, ServeletResponse, FilterChain), HttpServletRequestWrapper].
+  - Aspect Oriented Programming (AOP) [RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
+  - Handler Interceptor.
 - How to check Header validation in Inteceptors ?
 - What is the difference between hybernate and jpa ?
 - List 10 annotations from JPA.
