@@ -17,6 +17,10 @@
   - Filter can alter Request object, Interceptor can used for detailed authorization and caching. Common tasks such as Authentication, Logging can be done in both.
 
 - How to check Header validation in Inteceptors ?
+  - implements Interceptors, override boolean addInterceptors(Request, Response, Object handler).
+  - In this overrided method, request.getHeader("Authorization") and validate this token.
+  - Add this Interceptor object to WebMvcConfigurer -> addInterceptors(InterceptorRegistry registry) -> registry.addInterceptors(new InterceptorImpl()).addPathPatterns().excludePatterns()
+
 - What is the difference between hybernate and jpa ?
 - List 10 annotations from JPA.
 - Qualifier annotation and Primary annotation.
