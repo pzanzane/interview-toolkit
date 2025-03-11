@@ -9,9 +9,12 @@
 - - In this case either CustomObject need to be immutable and we have to return ImmutableList, for that we can use Collections.unmodifiableList(list) or ImmutableList class of Google.
   - If we try to change the unmodifiableList then it throws UnSupportedOperationException.
 - What features are available to intercept request before going to the controller ?
-- - Filter[implements Filter and doFilter(ServeletRequest, ServeletResponse, FilterChain), HttpServletRequestWrapper].
-  - Aspect Oriented Programming (AOP) [RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
-  - Handler Interceptor.
+- - https://www.baeldung.com/spring-boot-change-request-body-before-controller#modify-request-with-filters
+  - Filter[implements OncePerRequestFilter or HTTPFilter and doFilter(ServeletRequest, ServeletResponse, FilterChain), returns HttpServletRequestWrapper].
+  - Aspect Oriented Programming (AOP) [@RestControllerAdvice, RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
+  - HandlerInterceptor can access but cannot modify the request.
+  - Filter can alter Request object, Interceptor can used for caching, Authentication, Logging can be done in both.
+
 - How to check Header validation in Inteceptors ?
 - What is the difference between hybernate and jpa ?
 - List 10 annotations from JPA.
