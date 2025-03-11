@@ -43,6 +43,7 @@
   - Hash is nothing but a hashCode of the object, which is used to find index of the bucket in HashMap.
   - When we have an object in the bucket against the Index but it does not match with equals() method of the Object, then it is called Hash Collision.
   - Strategies for Collision Resolution.
+    - https://www.geeksforgeeks.org/how-to-handle-collisions-when-using-a-custom-hash-function-in-a-hashmap/
     - Seperate Chaining (Array Bucket with LinkedList<Entry<Key, Value>>)
     - Open Addressing
       - Linear Probing. (In case of collition, find next index by adding 1 to prevIndex)
