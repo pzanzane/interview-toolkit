@@ -13,7 +13,7 @@
   - Filter[implements OncePerRequestFilter or HTTPFilter and doFilter(ServeletRequest, ServeletResponse, FilterChain), returns HttpServletRequestWrapper].
   - Aspect Oriented Programming (AOP) [@RestControllerAdvice, RequestBodyAdvice, beforeBodyRead(HTTPInputMessage)].
   - HandlerInterceptor can access but cannot modify the request.
-  - Filter can alter Request object, Interceptor can used for caching, Authentication, Logging can be done in both.
+  - Filter can alter Request object, Interceptor can used for detailed authorization and caching. Common tasks such as Authentication, Logging can be done in both.
 
 - How to check Header validation in Inteceptors ?
 - What is the difference between hybernate and jpa ?
