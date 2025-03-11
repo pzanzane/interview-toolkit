@@ -39,3 +39,12 @@
 - Design Patterns in Microservices. [CQRS, SAGA< Pipeline]
 - Circuit Breaker, any libraries used for this (resilience4j)
 - How configs are secured. eg, DB password, credentials, certificates [Vault and OpenShift].
+- What is hash collision in HashMap.
+  - Hash is nothing but a hashCode of the object, which is used to find index of the bucket in HashMap.
+  - When we have an object in the bucket against the Index but it does not match with equals() method of the Object, then it is called Hash Collision.
+  - Strategies for Collision Resolution.
+    - Seperate Chaining (Array Bucket with LinkedList<Entry<Key, Value>>)
+    - Open Addressing
+      - Linear Probing. (In case of collition, find next index by adding 1 to prevIndex)
+      - Quadratic Probing. (find next index by incremental constant)
+      - Double Hasing (primaryHash and secondaryHash, in case of collision with primary, add secondaryHash to primary and keep doing it until we find empty bucket)
