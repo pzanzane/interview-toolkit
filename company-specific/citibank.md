@@ -21,8 +21,20 @@
   - In this overrided method, request.getHeader("Authorization") and validate this token.
   - Add this Interceptor object to WebMvcConfigurer -> addInterceptors(InterceptorRegistry registry) -> registry.addInterceptors(new InterceptorImpl()).addPathPatterns().excludePatterns()
 
-- What is the difference between hybernate and jpa ?
+- What is the difference between hybernate and jpa ? 
 - List 10 annotations from JPA.
+  - @Entity - Marks a class as a JPA entity (i.e., a table in the database).
+  - @Table – Specifies the table name for the entity (optional, default is the class name).
+  - @Id – Marks a field as the primary key.
+  - @GeneratedValue – Defines the strategy for generating primary key values.
+  - @Column – Customizes column mapping (name, length, nullable, etc.).
+  - @ManyToOne – Defines a many-to-one relationship (foreign key mapping).
+  - @OneToMany – Defines a one-to-many relationship.
+  - @OneToOne – Defines a one-to-one relationship.
+  - @Transient – Excludes a field from persistence (not stored in the database).
+  - @Enumerated – Maps an enum to a database column (as ORDINAL or STRING).
+  - @MappedSuperclass – Defines a superclass that provides common fields to child entities without becoming a database table itself.
+
 - Qualifier annotation and Primary annotation.
 - Design Patterns in Microservices. [CQRS, SAGA< Pipeline]
 - Circuit Breaker, any libraries used for this (resilience4j)
