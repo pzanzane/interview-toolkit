@@ -1,3 +1,14 @@
-- Print All Prime number from 1 to 100.
-- Read a file and print only k repetitive word from file ? example if file 100 repetitive print 10 word.
-- Design your custom HashMap and write atleast put and get method.
+- Print all prime number from 1 to 100
+- Read a file and print only K repetitive word from file ? example if file 100 repetitive print 10 word
+- Design your custom HashMap ? write at least put and get method
+- Design producer and consumer, producer will produce something and consume the same
+- What is Composite design pattern? where do we use it?
+- What is Builder design pattern? where do we use it?
+- What is chain of responsibility design patter? where do we use it?
+- What is adapter design pattern? where do we use it?
+- What is decorator design pattern? where do we use it?
+- How can we authenticate a request before that request hit actual api?
+- How do we validate request parameter if a request come into controller level?
+- Any annotation we use to validate a request on controller level?
+- If an api return 1000 record in response then how do you do pagination?
+- How do we improve performance of our api?
