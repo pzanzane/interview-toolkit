@@ -1,84 +1,113 @@
 1. Array to List using Stream
-  List<Integer> integerList = Arrays.stream(new Integer[]{3, 5, 7, 7}).collect(Collectors.toList());
-
-2. Primitive Array to Object Array
-  "int[] intArray = { 4, 3, 8, 1};
-  Integer[] integerArray = Arrays.stream(intArray).boxed().toArray(Integer[]::new);"
-
+    
+    ```java
+    Integer[] arr = {1,2,3,4};
+    List<Integer> list = Arrays.stream(arr).collect(Collectors.toList());
+    ```
+    
+2. Primitive Array to Object Array 
+    
+    ```java
+    int[] arr = {1,2,3,4};
+    Integer[] arrObj = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+    ```
+    
 3. Flatten List of List (2-D List) to List
-  "String[][] array = new String[][]{{""a"", ""b""}, {""c"", ""d""}, {""e"", ""f""}};
-        // Java 8
-  String[] result = Stream.of(array) 
-                .flatMap(Stream::of)
-                .toArray(String[]::new);"
-
-  
+    
+    ```java
+    String[][] str = new String[][]{{"a","b"}, {"c","d"}, {"c","d"}, {"e","f"}};
+    
+    // For List
+    Arrays.stream(str).flatMap(Stream::of).collect(Collectors.toList());
+    
+    // For Array
+    Arrays.stream(str).flatMap(Stream::of).toArray(String[]::new);
+    ```
+    
 4. List to Map (Key as Value)
-  "List<Integer> integerList = List.of(10,11,12,13,14);
-  Map<Integer, Integer> mapKeyAsValue = integerList
-                  .stream()
-                  .collect(toMap(Function.identity(), Function.identity()));"
-
-  
+    
+    ```java
+    List<Integer> list = new ArrayList();
+    
+    Map<Integer, Integer> map = list.stream().collect(toMap(Function.identity(), Function.identity()));
+    ```
+    
 5. List to Map (Key as Index)
-  "List<Integer> integerList = List.of(10,11,12,13,14);
-  Map<Integer, Integer> mapKeyAsIndex = integerList
-                  .stream()
-                  .collect(toMap(integerList::indexOf, Function.identity()));"
-
-  
-6. Separate Even and ODD
-  "int[] intArray = { 1, 6, 3, 4, 8, 2};
-  Map<Boolean, List<Integer>> partition = Arrays.stream(intArray)
-                  .boxed()
-                  .collect(Collectors.partitioningBy(i -> i%2 == 0));
-  Output -> Map -> True key -> Even and false for odd"
-
-7. Largest Number Formed
-  "List<Integer> integerList = Arrays.asList(9, 5, 30, 3, 4);//9,5,4,3,30 = 954330
-  String largestNumberFormed = integerList
-                  .stream()
-                  .sorted((a, b) -> (String.valueOf(b) + a).compareTo(String.valueOf(a) + b))
-                  .map(String::valueOf).collect(Collectors.joining());"
-
-  
-8. Find Factorial of 10
-  "int factorial = IntStream
-                  .rangeClosed(1, 10)
-                  .reduce(1, (x, y) -> x * y);
-  
-  Explain difference between range and rangeClosed"
-
-  
-9. Sort Strings in decreasing order
-    "String[] strArray = {""python"", ""unit"", ""test"", ""javascript""};
-  //output -> [javascript, python, unit, test]
-  
-  String[] strArrayInOrder = Arrays.stream(strArray).sorted(Comparator.comparing(String::length).reversed()).toArray(String[]::new);
-        "
-
-10. Check palindrome
-  "String str = ""abcba"";
-  boolean isPalindrome = IntStream
-                  .range(0, str.length()/2)
-                  .noneMatch(i -> str.charAt(i) != str.charAt(str.length() - i - 1));"
-
-
-  
+    
+    ```java
+    List<Integer> list = new ArrayList();
+    
+    Map<Integer, Integer> map = list.stream().collect(toMap(list::indexof, Function.identity()));
+    ```
+    
+6. Separate Even and ODD 
+    
+    ```java
+    List<Integer> list = new ArrayList();
+    Map<Boolean, List<Integer>> map = list.stream().collect(Collectors.partitionBy(i -> i%2 == 0));
+    ```
+    
+7. Find Factorial of 10 
+    
+    ```java
+    Integer factorial = IntStream
+    .rangeClosed(1,10)
+    .reduce(1, (x,y) -> x * y);
+    ```
+    
+8. Sort Strings in decreasing order
+    
+    ```java
+    String[] strArray = {"python", "unit", "test", "javascript"};
+    //output -> [javascript, python, unit, test]
+    
+    String[] output = Arrays.stream(strArray).sorted(Comparator.comparing(String::length).reversed()).toArray(String[]::new);
+    
+    ```
+    
+9. Largest Number Formed 
+    
+    ```java
+    List<Integer> integerList = Arrays.asList(9, 5, 30, 3, 4); //9,5,4,3,30 = 954330
+    
+    integerList.stream()
+    .sorted((a,b) -> (String.valueOf(b) + a).compareTo(String.valueOf(a) + b))
+    .map(String::valueOf)
+    .collect(Collectors.joining());
+    ```
+    
+10. Check palindrome 
+    
+    ```java
+    String str = "abcba"
+    // All Match
+    boolean isPalindrom = IntStream.range(0, str.length/2)
+    .allMatch(i -> str.charAt(i) == str.charAt(str.length - 1 - i))
+    
+    // Non Match
+    boolean isPalindrom = IntStream.range(0, str.length/2)
+    .nonMatch(i -> str.charAt(i) != str.charAt(str.length - 1 - i))
+    ```
+    
 11. Reverse Each Word of String Array
-  "String[] strArray = {""test"", ""bench""}; //[tset, hcneb]
-  String[] reversed = Arrays.stream(strArray)
-                  .map(s -> new StringBuffer(s).reverse())
-                  .map(StringBuffer::toString)
-                  //.collect(Collectors.toList());
-                  .toArray(String[]::new);"
-
-  
+    
+    ```java
+    String[] strArray = {"test", "bench"};
+    String[] outArray = Arrays.stream(strArray)
+    .map(s -> new StringBuilder(s).reverse())
+    .map(StringBuilder::toString)
+    .toArray(String[]::new);
+    ```
+    
 12. Reverse an Integer Array
-  "int[] intArray = {5, 7, 1, 4, 9};
-  int[] reversedArray = IntStream.rangeClosed(1, intArray.length)
-                  .map(i -> intArray[intArray.length - i])
-                  .toArray();"
+    
+    ```java
+    int[] intArray = {5, 7, 1, 4, 9};
+    Integer[] intArray = IntStream.rangeClosed(0, intArray.length-1)
+    .map(i -> intArray[intArray.length-i-1])
+    .toArray(Integer[]::new);
+    
+    ```
 
   
 13. Find Multiple of 5
