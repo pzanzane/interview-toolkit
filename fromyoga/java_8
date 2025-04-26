@@ -50,7 +50,7 @@
   Explain difference between range and rangeClosed"
 
   
-9. Sort Strings in increasing order
+9. Sort Strings in decreasing order
     "String[] strArray = {""python"", ""unit"", ""test"", ""javascript""};
   //output -> [javascript, python, unit, test]
   
