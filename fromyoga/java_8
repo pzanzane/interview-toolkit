@@ -265,6 +265,10 @@
                         .collect(toMap(EmployeeWithDepartment::getDepartment, Function.identity(),
                                 BinaryOperator.maxBy(Comparator.comparingInt(EmployeeWithDepartment::getSalary))));
 
+30.how to count number of employees using department
+Map<String, Long> countByDepartment = employees.stream()
+    .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
+
 
 
   
