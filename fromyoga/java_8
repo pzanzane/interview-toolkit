@@ -269,6 +269,22 @@
 Map<String, Long> countByDepartment = employees.stream()
     .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
 
+31. Find 3rd Max from list of integers
+```
+List<Integer> numbers = Arrays.asList(4, 1, 7, 3, 9, 2, 7, 9); // example list with duplicates
+
+        Optional<Integer> thirdMax = numbers.stream()
+            .distinct()                      // Remove duplicates
+            .sorted((a, b) -> b - a)         // Sort in descending order
+            .skip(2)                         // Skip first two max values
+            .findFirst();                    // Get the third max
+
+        thirdMax.ifPresentOrElse(
+            value -> System.out.println("3rd max is: " + value),
+            () -> System.out.println("Less than 3 unique elements")
+        );
+```
+
 
 
   
