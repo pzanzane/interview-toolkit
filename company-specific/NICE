@@ -1,0 +1,7 @@
+- Rabbit mq architecture 
+- Elastic search architecture 
+- Multi tenancy model
+- Deadlock, race condition
+- Aws SNS and SQS configuration 
+- Sql query join with aggregation 
+- Stream grouping by programa
