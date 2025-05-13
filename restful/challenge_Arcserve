@@ -1,0 +1,68 @@
+Problem Statement
+Objective:
+Design and implement a REST API using Spring Boot that retrieves user data based on user type(s). The API must meet the following requirements:
+
+1. API Type: GET request.
+
+2. Input:The user can provide one or more userTypes as query parameters (e.g., userType=ADMIN or userType=ADMIN,USER).If no userType is provided, return all users.
+
+3. Output:
+Return a list of users matching the provided userType(s).
+Each user’s data must be returned in a DTO containing:
+username: The name of the user (String).
+userType: The type of user (e.g., ADMIN, USER).
+
+4. Data Source:
+For simplicity, use an in-memory data structure (e.g., a List or Map) to store user data. No database is required.
+Assume user types are predefined (e.g., ADMIN, USER).
+
+5. Validation:
+Validate that the provided userType(s) are valid (i.e., belong to the predefined set of user types).
+Return an appropriate error response (e.g., HTTP 400) if invalid userType(s) are provided.
+
+6. Response Format:
+Return JSON with a list of user DTOs.
+Include proper HTTP status codes (e.g., 200 for success, 400 for invalid input).
+
+7. Additional Requirements:
+
+Use a proper DTO (Data Transfer Object) to encapsulate user data.
+Follow REST best practices (e.g., meaningful endpoints, proper error handling).
+Organize the code with a controller, service layer, and DTO class.
+Use Spring Boot annotations for dependency injection and REST handling.
+
+Example Requests and Responses:
+
+Request: GET /api/users?userType=ADMIN Response (HTTP 200):[
+   {
+      "username": "admin1",
+      "userType": "ADMIN"
+   },
+   {
+      "username": "admin2",
+      "userType": "ADMIN"
+   }
+]
+
+Request: GET /api/users?userType=ADMIN,USER Response (HTTP 200):[
+   {
+      "username": "admin1",
+      "userType": "ADMIN"
+   },
+   {
+      "username": "user1",
+      "userType": "USER"
+   }
+]
+
+Request: GET /api/users?userType=INVALID Response (HTTP 400):{
+  "error": "Invalid user type: INVALID"
+}
+
+Deliverables:
+A Spring Boot REST controller to handle the GET API.
+A DTO class for user data.
+A service layer to handle business logic (e.g., filtering users by type).
+An enum for user types.
+Proper error handling and validation.
+(Optional) A sample in-memory data source initialized with dummy data
