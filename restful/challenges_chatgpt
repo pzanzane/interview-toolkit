@@ -1,0 +1,28 @@
+1. Question 1: Create and Fetch User Profile
+    1. Scenario:
+    You're building an app where users can sign up and view their profile.
+    2. Task:
+        1. Design a POST API to create a user profile with fields like name, email, and age.
+        2. Design a GET API to fetch a user profile by userId.
+        Follow-up:
+            1. What should the response look like when a user is not found?
+            2. How would you handle validation for missing fields?
+            
+2. Question 2: Submit and Retrieve Feedback
+Scenario:
+    1. You’re developing a feedback system where users submit feedback and admins can read them.
+    2. Task:
+        1. Design a POST API to submit feedback with fields like userId, message, and timestamp.
+        2. Design a GET API to retrieve all feedbacks submitted by a specific user (/feedbacks?userId=123).
+        3. Follow-up:
+            1. How would you paginate the feedback results?
+            2. What status codes would you return for different outcomes?
+            
+3. Question 3: Add and List Products in a Store
+    1. Scenario: You’re designing an inventory system for a store.
+        1. Task:
+            1. Design a POST API to add a new product with fields like productName, price, and category.
+            2. Design a GET API to list all products, with an optional query filter by category (/products?category=electronics).
+            3. Follow-up:
+                1. How can you make the API support sorting (e.g., by price)?
+                2. What should happen if a product with the same name already exists?
