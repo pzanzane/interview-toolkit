@@ -1,3 +1,8 @@
+## 16 May 2025
+### Panel
+- Bharadwaj.Ghadiam
+- Pravallika.Modugula
+
 - Requirements
   - - Design database for the same
   - - Design API for the same
