@@ -1,0 +1,21 @@
+## First round:
+CQRS
+API Gateway
+Data consistency in distributed system
+Open closed principal 
+Write code to fetch data from user and order table and create a userOrderSummary with junit
+Java memory model
+Garbage collection 
+Prevent failure while Code refactoring 
+How to improve code quality
+
+## Second round: 
+Project business needs and roles 
+Agile
+Dark side of TDD and when should we use TDD
+Monolith vs Microservice 
+Argument to use Microservice base architecture 
+When to use monolith architecture 
+Challenge you face in last 1 year
+What you learned in last 6 month
+Junior vs developer vs senior developer
