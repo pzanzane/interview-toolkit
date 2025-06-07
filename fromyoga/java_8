@@ -297,6 +297,51 @@ List<Integer> numbers = Arrays.asList(4, 1, 7, 3, 9, 2, 7, 9); // example list w
         );
 ```
 
+32. Create Map of employee with Employee object as key and salary as value. In descending order of salary
+
+```
+List<EmployeeWithDepartment> list = List.of(new EmployeeWithDepartment("IT", 5000),
+                                                    new EmployeeWithDepartment("IT", 6000),
+                                                    new EmployeeWithDepartment("IT", 7000),
+                                                    new EmployeeWithDepartment("IT", 8000),
+                                                    new EmployeeWithDepartment("IT", 9000),
+                                                    new EmployeeWithDepartment("BLACK", 10000),
+                                                    new EmployeeWithDepartment("BLACK", 11000),
+                                                    new EmployeeWithDepartment("BLACK", 12000));
+
+        return list.stream()
+                .sorted(Comparator.comparingInt(EmployeeWithDepartment::getSalary).reversed())
+                .collect(Collectors.toMap(Function.identity(),
+                                          EmployeeWithDepartment::getSalary,
+                                            (e1, e2) -> e1,
+                                            LinkedHashMap::new));
+```
+
+-------------------------------------------------
+
+public static class EmployeeWithDepartment {
+
+        private final String department;
+        private final int salary;
+
+        public EmployeeWithDepartment(String department, int salary) {
+            this.department = department;
+            this.salary = salary;
+        }
+
+        public String getDepartment() {
+            return department;
+        }
+
+        public int getSalary() {
+            return salary;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("[Department: %s - Salary: %s]", department, salary);
+        }
+    }
 
 
   
