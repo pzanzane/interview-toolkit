@@ -259,7 +259,19 @@
                   .collect(Collectors.toList());  
   int[] common = Arrays.stream(intArray).filter(intList2::contains).toArray();
 
-29. Sort Employee in each department having max Salary
+29. Sort Employee in each department by Salary in desc
+Map<String, List<Employee>> groupedAndSorted = employees.stream()
+            .collect(Collectors.groupingBy(
+                Employee::getDepartment,
+                Collectors.collectingAndThen(
+                    Collectors.toList(),
+                    list -> list.stream()
+                        .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+                        .collect(Collectors.toList())
+                )
+            ));
+
+29. Find Employee in each department having max Salary
   Map<String, EmployeeWithDepartment> salByDep =
                 employees.stream()
                         .collect(toMap(EmployeeWithDepartment::getDepartment, Function.identity(),
