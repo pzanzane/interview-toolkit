@@ -4,19 +4,26 @@
 3. Comparator.comparingInt() // .comparingDouble() // .reversed()
 4. Comparator.comparingInt()
 5. filter()
-5. findfirst() //returns Optional<>
-6. skip()
-7. limit()
-8. map()
-9. flatMap()
-10.forEach()
-11.reduce(firstDefaultValue, (x,y) -> x*y)
-12. collect(Collectors)
-13. Collectors.toList()
-14. Collectors.toMap(key, value, mergeFunction, datastructure)
-15. Collectors.partitionBy()
-16. Collectors.groupBy(key, dataastructure, groupingValue)
-17. Collectors.collectingAndThen(dataStructure, lambda)
+6. findfirst() //returns Optional<>
+7. Optional.ifPresentOrElse(lambdaForPresent, elseLambdaForAbsent)
+8. skip()
+9. limit()
+10. map()
+11. mapToObj()
+12. flatMap()
+13. forEach()
+14. reduce(firstDefaultValue, (x,y) -> x*y)
+15. toArray(Integer[]::new) // toArray(String[]::new)
+16. collect(Collectors)
+17. Collectors.toList()
+18. Collectors.joining(delimiter) // .joining(delimiter, opening, closing)
+19. Collectors.toMap(key, value, mergeFunction, datastructure) //.toMap(key, value)
+20. Collectors.partitionBy(predicate)
+21. Collectors.groupBy(key, dataastructure, groupingValue) //.groupBy(key, groupingValue)
+    1. Collectors.collectingAndThen(dataStructure, lambda)
+    2. Collectors.counting()
+    3. Collectors.suming()
+    4. Collectors.summarizing()
 
 ### Programs
 1. Array to List using Stream
@@ -39,7 +46,7 @@
     String[][] str = new String[][]{{"a","b"}, {"c","d"}, {"c","d"}, {"e","f"}};
     
     // For List
-    Arrays.stream(str).flatMap(Stream::of).collect(Collectors.toList());
+    Arrays.stream(str).flatMap(Arrays::stream).collect(Collectors.toList());
     
     // For Array
     Arrays.stream(str).flatMap(Stream::of).toArray(String[]::new);
