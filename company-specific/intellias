@@ -31,7 +31,7 @@ Write code to fetch data from user and order table and create a userOrderSummary
         - It invalidates its copy of variables.
         - On exit, it flushes changes to main memory.
 
-Garbage collection 
+Garbage collection ? How to avoid memory leaks ?
 Prevent failure while Code refactoring 
 How to improve code quality
 
