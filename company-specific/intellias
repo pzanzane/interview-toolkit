@@ -4,7 +4,33 @@ API Gateway
 Data consistency in distributed system
 Open closed principal 
 Write code to fetch data from user and order table and create a userOrderSummary with junit
-Java memory model
+- Java memory model
+  - The Java Memory Model (JMM) defines how threads interact through memory 
+    in Java — especially how variables are read and written when multiple threads are involved.
+
+    - Main Memory vs Thread Working Memory.
+      - Main Memory: Shared by all threads (like RAM).
+        Working Memory: Each thread has a copy of variables (like CPU cache).
+        Threads read/write from their own copy, and changes must be flushed to main memory to be visible to others.
+
+    - Happens-Before Relationship.
+      - JMM uses the "happens-before" rule to guarantee visibility:
+      - A write happens-before a read if the updated value is guaranteed to be visible.
+      - Examples:
+        A call to Thread.start() happens-before the first action of that thread.
+        Writing to a volatile variable happens-before another thread reads it.
+
+    - Volatile Keyword.
+      - Ensures visibility, not atomicity.
+      - Changes to a volatile variable are immediately visible to all threads.
+      - Useful when a variable is read by multiple threads but written by only one.
+
+    - Synchronized Block.
+      - Ensures mutual exclusion and visibility.
+      - When a thread enters a synchronized block:
+        - It invalidates its copy of variables.
+        - On exit, it flushes changes to main memory.
+
 Garbage collection 
 Prevent failure while Code refactoring 
 How to improve code quality
