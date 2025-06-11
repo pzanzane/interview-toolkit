@@ -1,3 +1,24 @@
+### Keywords
+1. distinct()
+2. sorted()
+3. Comparator.comparingInt() // .comparingDouble() // .reversed()
+4. Comparator.comparingInt()
+5. filter()
+5. findfirst() //returns Optional<>
+6. skip()
+7. limit()
+8. map()
+9. flatMap()
+10.forEach()
+11.reduce(firstDefaultValue, (x,y) -> x*y)
+12. collect(Collectors)
+13. Collectors.toList()
+14. Collectors.toMap(key, value, mergeFunction, datastructure)
+15. Collectors.partitionBy()
+16. Collectors.groupBy(key, dataastructure, groupingValue)
+17. Collectors.collectingAndThen(dataStructure, lambda)
+
+### Programs
 1. Array to List using Stream
     
     ```java
