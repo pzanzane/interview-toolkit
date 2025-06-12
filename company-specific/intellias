@@ -81,13 +81,56 @@
   - While Reviewing, issues are addressed with external resources such as Effective Java to undrstand the problem
     and refactor the code this serves as constructive feedback to avoid conflicts.
 
+------------------- ------------------- -------------------
+
 ## Second round: 
-Project business needs and roles 
-Agile
-Dark side of TDD and when should we use TDD
-Monolith vs Microservice 
-Argument to use Microservice base architecture 
-When to use monolith architecture 
-Challenge you face in last 1 year
-What you learned in last 6 month
-Junior vs developer vs senior developer
+
+# Project business needs and roles 
+-
+
+# Agile
+-
+
+# Dark side of TDD and when should we use TDD
+- TDD is Red - Green - Refactor
+- Which is nothing but, we write failing test, write minimal code to pass and refactor.
+  We keep doing it until we reach desired outcome.
+- Dark Side
+  1. Slower initial development.
+      Writing tests before actual code takes time and in exploratory phases this feels like overhead.
+      It may feel like building the guiderails before building the road.
+
+  2. Frequently chaning requirment may cause further delays, because we will need to change unit tests too.
+
+
+# Monolith vs Microservice ? When to use monolith architecture ? 
+- In monolithic everything is in single application.
+- Microserves seggregated into group of services.
+- Microserves patterns are useful when we want to address scalability, fault tolerance and availability issues.
+- Deploying specific services are easier which reduces down time for the end user.
+- We can rely on event driven architecture to improve latency and throughput.
+- For smaller applications with less number of users and less complexity we can go for monolithic.
+- For exploratory POCs we can go with monolithic.
+
+# Argument to use Microservice base architecture
+- Timeline conflict. 
+  How you will convince your product team that investing more time initially is better ?
+    a. Here we will have to rely on non functional requirement and scalability, fault tolerance and availability SLA.
+    b. With increased users, it will be difficult to manage scale and fault tolerance, this may lead to bad customer satisfaction.
+    c. It is better to invest time early to address these issues rather than creating technical debt for the team.
+    d. If our competetors have solved these issues before us then they may take over the market share which we cannot afford.
+  
+
+
+# Challenge you face in last 1 year
+- Jumping tech stacks and delivering on time was challenging.
+- Going through source code, creating sequence and flow digrams, doing heavy lifting for the team so
+  others dont have to reinvest time.
+- Focusing on team management, delivering sotry points to meet SLA.
+
+# What you learned in last 6 month
+- How legacy batch applications work and how they are maintained with Regression suites.
+- Learned to write shell scripting to deliver healthcheckup utility.
+- Continuosly learning about microservices and backend system design, also emphasising on problem solving DSA
+
+# Junior vs developer vs senior developer
