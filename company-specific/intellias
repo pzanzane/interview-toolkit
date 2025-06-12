@@ -1,9 +1,20 @@
 ## First round:
-CQRS
-API Gateway
-Data consistency in distributed system
-Open closed principal 
-Write code to fetch data from user and order table and create a userOrderSummary with junit
+# CQRS
+- We can use CQRS pattern when we have different needs for scalability in writing and reading services.
+  eg, eCommerce, Inssurance, Loan, social network where write operations are lot less than reads.
+- If writing logic has complex validations, wokflow or business rules before updating the state,
+  then command side can encapsulate this logic.
+
+# API Gateway Pattern
+  - Sits between Client and Server.
+  - Serves as reverse proxy for microservices so client does not need to know actual address.
+  - Common tasks such as authentication, routing and distribution is done in API gateway.
+    So internal mapping can change but enteral endpoints can remain same.
+  - Ratelimiting and loadbalancing can also be part of API gateway.
+
+# Data consistency in distributed system
+# Open closed principal 
+# Write code to fetch data from user and order table and create a userOrderSummary with junit
 - Java memory model
   - The Java Memory Model (JMM) defines how threads interact through memory 
     in Java — especially how variables are read and written when multiple threads are involved.
@@ -31,9 +42,44 @@ Write code to fetch data from user and order table and create a userOrderSummary
         - It invalidates its copy of variables.
         - On exit, it flushes changes to main memory.
 
-Garbage collection ? How to avoid memory leaks ?
-Prevent failure while Code refactoring 
-How to improve code quality
+# Garbage collection ?
+- Garbage collector is automatic process of reclaiming memory by removing objects that are no longer reachble.
+- Key Concepts
+  1. Heap memory
+    a. Younger Generation.
+    b. Oldrer Ganeration.
+    c. Metaspace - class metadata
+
+  2. GC Phases
+    a. Minro GC: Cleans young generation, Fast and Frequent.
+    b. Major GC: Cleans old generation, Pauses the app and less frequent.
+
+  3. GC roots
+    a. GC starats from GC root references which can be static variables, active thread stack and traces reachable objects.
+    b. Unreachable once are collected.
+
+# How to avoid memory leaks ?
+- Memory leak happens in java, when objects which are no longer needed are still referenced in memory, 
+  this prevents those objects from Garbage collected.
+  1. Set refencens null when we are done with objects.
+  2. Avoid holding static varaibles, because static variables lives for life of a Application.
+  3. Consider using Weak References.
+  4. If we are using listeners, we should unregister then when not in use.
+  5. To detect memory leaks, we can use tools like Heap Dumps, JProfiler.
+
+# Prevent failure while Code refactoring 
+- Rely on detailed unit test cases and Integration tests, which will ensure input and output expectations.
+
+# How to improve code quality
+- Automatic tools like Sonar lints and static analysis to identify formating issues.
+- Use Clean Code architectures for Simple, readble code, leverage princicples such as DRY and KISS.
+- Enough code reviews are needed to maintain clean coding practices.
+- Foster the culture of health competition and constructive feedback while code review process.
+  - While working for google, they had internal tool called critique which is used for code reviewing,
+    It used to calculate score of code qualities based on lint errors and reviewing loops for gamification of the process.
+    This is used as healthy competition.
+  - While Reviewing, issues are addressed with external resources such as Effective Java to undrstand the problem
+    and refactor the code this serves as constructive feedback to avoid conflicts.
 
 ## Second round: 
 Project business needs and roles 
