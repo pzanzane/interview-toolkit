@@ -345,8 +345,6 @@ List<EmployeeWithDepartment> list = List.of(new EmployeeWithDepartment("IT", 500
                                             LinkedHashMap::new));
 ```
 
--------------------------------------------------
-
 public static class EmployeeWithDepartment {
 
         private final String department;
@@ -371,5 +369,33 @@ public static class EmployeeWithDepartment {
         }
     }
 
+-----------------------
 
+33. Write FunctionalInterface which will return sum of 3 values.
+    Consider the condition that the parameter can be null, in case null consider default value as 100.
+    Use this lambda function in another function.
+
+```
+
+    // Create lambda interface
+    @FunctionalInterface
+    public interface TriFunction<A,B,C, R> {
+        R apply(A a, B b, C c);
+    }
+
+    // Use lambdas in another function.
+    public static Integer applyTriFunction(Integer a, Integer b, Integer c, 
+                                           TriFunction<Integer, Integer, Integer, Integer> fun, 
+                                           Function<Integer, Integer> defaultValueFun) {
+        a = defaultValueFun.apply(a);
+        b = defaultValueFun.apply(b);
+        c = defaultValueFun.apply(c);
+
+        return fun.apply(a, b, c);
+    }
+
+    // Use function
+    applyTriFunction(10, 20 ,30, ((x,y,z) -> x + y + z), (x -> x == null ? 100 : x));
+
+```
   
