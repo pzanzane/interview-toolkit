@@ -140,3 +140,9 @@
 - Continuosly learning about system design and microservices, also emphasising on problem solving DSA
 
 # Junior vs developer vs senior developer
+- Junior devs need lot of mentoring and code reviews, needs tasks broken down and well defined for them to understand.
+- Mid developers work independently, can build end to end feature and write testable, maintanable code, 
+  responsbile for delivery and maintance of feature.
+- Senior devs need to have deep understanding of architectures, performance trade offs and optmizations.
+  Have ownership of entire module or system, influence technical decision and drive best practices.
+
