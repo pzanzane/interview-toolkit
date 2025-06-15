@@ -100,7 +100,8 @@
       Writing tests before actual code takes time and in exploratory phases this feels like overhead.
       It may feel like building the guiderails before building the road.
 
-  2. Frequently chaning requirment may cause further delays, because we will need to change unit tests too.
+  2. TDD has steep learning curve and need specific way of thinking to identify test cases, 
+    now new developers may write poor quality tests or skip tests, this may lead to false confidence in delivery.
 
 
 # Monolith vs Microservice ? When to use monolith architecture ? 
@@ -115,10 +116,16 @@
 # Argument to use Microservice base architecture
 - Timeline conflict. 
   How you will convince your product team that investing more time initially is better ?
-    a. Here we will have to rely on non functional requirement and scalability, fault tolerance and availability SLA.
-    b. With increased users, it will be difficult to manage scale and fault tolerance, this may lead to bad customer satisfaction.
-    c. It is better to invest time early to address these issues rather than creating technical debt for the team.
-    d. If our competetors have solved these issues before us then they may take over the market share which we cannot afford.
+    a. Here we will have to rely on non functional requirement like scalability, fault tolerance and availability.
+    b. Product team have to agree on whether we want to match competetors metrics on availability and throughput,
+        If no then it will be the product teams backlog in case users demand similar SLA.
+    c. This will create technical debt for the team, later converting this into microservices will take time and product team will have to
+        wait until microservices are ready to address the required SLA.
+    d. With increased users, it will be difficult to manage the scale.
+    e. It is better to invest time early to address these issues rather than creating technical debt for the team.
+    f. If our competetors have solved these issues before us then they may take over the market share which we cannot afford.
+    g. If we do not have any competetor in that case product team need to take call on whether they are okay with
+        availability and throughput delivered by monolithic, it may lead to bad customer satisfaction if demands are high.
   
 
 
@@ -129,8 +136,7 @@
 - Focusing on team management, delivering sotry points to meet SLA.
 
 # What you learned in last 6 month
-- How legacy batch applications work and how they are maintained with Regression suites.
-- Learned to write shell scripting to deliver healthcheckup utility.
-- Continuosly learning about microservices and backend system design, also emphasising on problem solving DSA
+- I am learning cloud computing, aws services to deploy and maintain product ready application.
+- Continuosly learning about system design and microservices, also emphasising on problem solving DSA
 
 # Junior vs developer vs senior developer
