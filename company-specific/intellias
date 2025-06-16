@@ -81,6 +81,18 @@
   - While Reviewing, issues are addressed with external resources such as Effective Java to undrstand the problem
     and refactor the code this serves as constructive feedback to avoid conflicts.
 
+# Deploy using AWS.
+    1. Monitoring ?
+        1. Cloud Watch.
+    2. Deploying ?
+        1. EC2 instance
+        2. Load balancing, Autoscaling.
+    3. Database ?
+        1. RDS (Relational), DynamoDB (NoSQL)
+    4. Storage ?
+        1. S3
+    5. Orchestration
+        1. AWS EKS (Managed Kubernetes) and AWS ECS.
 ------------------- ------------------- -------------------
 
 ## Second round: 
