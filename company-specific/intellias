@@ -102,8 +102,9 @@
 
 # Agile
 - Agile is an iterative and incremental approach to software development.
-- We can deliver smaller chunk of features and with that test the market or customer, create a way for quick feedback loop and fail fast mechanism.
-- It provides flexibility, customer collaboration, and frequent delivery of working software.
+- We can deliver smaller chunk of features and with that test the market or customer, 
+  create a way for quick feedback loop and fail fast mechanism.
+- It builds trust with customer by collaboration and frequent delivery of working software.
 
 # Dark side of TDD and when should we use TDD
 - TDD is Red - Green - Refactor
